@@ -1,0 +1,39 @@
+name: mhz_app
+description: MHZ Food Detection App - Phát hiện món ăn cho người cao tuổi
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Camera plugin
+  camera: ^0.10.5+5
+
+  # Permission handler
+  permission_handler: ^11.0.1
+
+  # SharedPreferences để lưu settings
+  shared_preferences: ^2.2.2
+
+  # Icon
+  cupertino_icons: ^1.0.2
+
+  # TODO: Uncomment khi cần dùng TFLite
+  # tflite_flutter: ^0.10.4
+  # image: ^4.0.17
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Thư mục chứa model (sẽ thêm file best.tflite sau)
+  assets:
+    - assets/models/
